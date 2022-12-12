@@ -9,6 +9,13 @@ game_beginning = input("Please select if you want to start the game or read the 
 num1 = randint(1, 10)
 num2 = randint(1, 10)
 
+# Esasy level addition
+def easy_level_addition():
+    easy_addition = num1 + num2
+    answer = input(f'{num1} + {num2} \n')
+    ans = int(answer)
+    print('Correct' if ans == easy_addition else 'Wrong')
+
 # Easy level subtract
 def easy_level_subtract():
     if (num1 > num2):
