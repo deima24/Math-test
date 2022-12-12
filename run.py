@@ -9,6 +9,19 @@ game_beginning = input("Please select if you want to start the game or read the 
 num1 = randint(1, 10)
 num2 = randint(1, 10)
 
+# Easy level subtract
+def easy_level_subtract():
+    if (num1 > num2):
+        easy_subtract = num1 - num2
+        answer = input(f'{num1} - {num2} \n')
+        ans = int(answer)
+        print('Correct' if ans == easy_subtract else 'Wrong')
+    elif (num2 > num1):
+        easy_subtract = num2 - num1
+        answer = input(f'{num2} - {num1} \n')
+        ans = int(answer)
+        print('Correct' if ans == easy_subtract else 'Wrong')
+
 # Easy level multiplication
 def easy_level_multiplication():
     easy_multiplication = num1 * num2
@@ -43,7 +56,7 @@ def easy_level():
 # Checking what user has typed if it typed 1 or 2
 def game_start():
         
-        print("1) Level 1 (0 - 10)")
+        print("1) Level 1 (1 - 10)")
         print("2) Level 2 (10 - 100)")
         level = int(input("What level of Math quiz do you want to play? "))
         if level == 1:
