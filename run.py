@@ -68,14 +68,14 @@ def easy_level():
     easy_level_select = input("What would you like to do in this level? \nDivision \nMultiplication \nSubtract \nAddition \n")
     while easy_level_select not in ("division", "multiplication", "subtract", "addition"):
         break
-    if easy_level_select == "division":
+    if easy_level_select.lower() == "division":
         print("You have selected easy level division")
         easy_level_division()
-    if easy_level_select == "multiplication":
+    if easy_level_select.lower() == "multiplication":
         easy_level_multiplication()
-    if easy_level_select == "subtract":
+    if easy_level_select.lower() == "subtract":
         easy_level_subtract()
-    if easy_level_select == "addition":
+    if easy_level_select.lower() == "addition":
         easy_level_addition()
 
 # Checking what user has typed if it typed 1 or 2
