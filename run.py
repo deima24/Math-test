@@ -6,18 +6,23 @@ print("Welcome to the Math test!")
 print("1) Start the game")
 print("2) Game rules")
 game_beginning = input("Please select if you want to start the game or read the rules of the game. ")
-num1 = randint(1, 10)
-num2 = randint(1, 10)
 
 # Esasy level addition
 def easy_level_addition():
-    easy_addition = num1 + num2
-    answer = input(f'{num1} + {num2} \n')
-    ans = int(answer)
-    print('Correct' if ans == easy_addition else 'Wrong')
+    while True:
+        num1 = randint(1, 10)
+        num2 = randint(1, 10)
+        easy_addition = num1 + num2
+        answer = input(f'{num1} + {num2} \n')
+        ans = int(answer)
+        print('Correct' if ans == easy_addition else 'Wrong')
+        if not answer:
+            break
 
 # Easy level subtract
 def easy_level_subtract():
+    num1 = randint(1, 10)
+    num2 = randint(1, 10)
     if (num1 > num2):
         easy_subtract = num1 - num2
         answer = input(f'{num1} - {num2} \n')
@@ -31,6 +36,8 @@ def easy_level_subtract():
 
 # Easy level multiplication
 def easy_level_multiplication():
+    num1 = randint(1, 10)
+    num2 = randint(1, 10)
     easy_multiplication = num1 * num2
     answer = input(f'{num1} * {num2} \n')
     ans = int(answer)
@@ -38,11 +45,22 @@ def easy_level_multiplication():
 
 # Creating easy level division test
 def easy_level_division():
-    num1%num2 == 0
-    easy_division = num1 / num2 
-    answer = input(f'{num1} / {num2} \n')
-    ans = int(answer)
-    print('Correct' if ans == easy_division else 'Wrong')
+    while True:
+        num1 = randint(1, 10)
+        num2 = randint(1, 10)
+
+        if num1%num2 == 0:
+            easy_subtract = num1 / num2
+            answer = input(f'{num1} / {num2} \n')
+            ans = int(answer)
+            print('Correct' if ans == easy_subtract else 'Wrong')
+        elif num2%num1 == 0:
+            easy_subtract = num2 / num1
+            answer = input(f'{num2} / {num1} \n')
+            ans = int(answer)
+            print('Correct' if ans == easy_subtract else 'Wrong')
+        if not answer:
+            break
 
 
 # Creating what user want to do in a easy level
