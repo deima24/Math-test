@@ -7,17 +7,28 @@ print("1) Start the game")
 print("2) Game rules")
 game_beginning = input("Please select if you want to start the game or read the rules of the game. ")
 
+
 # Esasy level addition
 def easy_level_addition():
-    while True:
+    count = 0
+    score = 0
+    while (count < 10):
+        
+        count += 1
+        
         num1 = randint(1, 10)
         num2 = randint(1, 10)
         easy_addition = num1 + num2
         answer = input(f'{num1} + {num2} \n')
         ans = int(answer)
-        print('Correct' if ans == easy_addition else 'Wrong')
-        if not answer:
-            break
+        if ans == easy_addition:
+            print('Correct')
+            score += 1
+        else:
+            print('Inccorect')
+    else:
+        print('You got ' + str(score) + ' correct out of 10!')
+        
 
 # Easy level subtract
 def easy_level_subtract():
