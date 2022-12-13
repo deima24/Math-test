@@ -2,20 +2,12 @@ from random import randint
 
 print("Welcome to the Math test!")
 
-# Asking user what they want to do read the rules or start the game
-print("1) Start the game")
-print("2) Game rules")
-game_beginning = input("Please select if you want to start the game or read the rules of the game. ")
-
-
-# Esasy level addition
+# Easy level addition
 def easy_level_addition():
     count = 0
     score = 0
     while (count < 10):
-        
         count += 1
-        
         num1 = randint(1, 10)
         num2 = randint(1, 10)
         easy_addition = num1 + num2
@@ -28,7 +20,15 @@ def easy_level_addition():
             print('Inccorect')
     else:
         print('You got ' + str(score) + ' correct out of 10!')
-        
+        option = int(input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n'))
+        if option == 1:
+            easy_level_addition()
+        if option == 2:
+            easy_level()
+        if option == 3:
+            game_start()
+        if option == 4:
+            main()
 
 # Easy level subtract
 def easy_level_subtract():
@@ -99,11 +99,21 @@ def game_start():
             print("starting easy level")
             easy_level()
 
-while game_beginning not in ("1", "2"):
-    print("Select one of the two options:")
-if game_beginning == "1":
-    game_start()
-elif game_beginning == "2":
-    game_rules()
 
+
+
+# Asking user what they want to do read the rules or start the game
+def main():
+    print("1) Start the game")
+    print("2) Game rules")
+    game_beginning = input("Please select if you want to start the game or read the rules of the game. ")
+
+    while game_beginning not in ("1", "2"):
+        print("Select one of the two options:")
+    if game_beginning == "1":
+        game_start()
+    elif game_beginning == "2":
+        game_rules()
+
+main()
 
