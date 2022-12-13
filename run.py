@@ -6,7 +6,7 @@ print("Welcome to the Math test!")
 def easy_level_addition():
     count = 0
     score = 0
-    while (count < 10):
+    while (count <= 9):
         count += 1
         num1 = randint(1, 10)
         num2 = randint(1, 10)
@@ -19,7 +19,7 @@ def easy_level_addition():
         else:
             print('Inccorect')
     else:
-        print('You got ' + str(score) + ' correct out of 10!')
+        print('You got ' + str(score) + f' correct out of {count}!')
         option = int(input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n'))
         if option == 1:
             easy_level_addition()
@@ -34,7 +34,7 @@ def easy_level_addition():
 def easy_level_subtract():
     count = 0
     score = 0
-    while (count < 10):
+    while (count <= 9):
         count += 1
         num1 = randint(1, 10)
         num2 = randint(1, 10)
@@ -70,12 +70,31 @@ def easy_level_subtract():
 
 # Easy level multiplication
 def easy_level_multiplication():
-    num1 = randint(1, 10)
-    num2 = randint(1, 10)
-    easy_multiplication = num1 * num2
-    answer = input(f'{num1} * {num2} \n')
-    ans = int(answer)
-    print('Correct' if ans == easy_multiplication else "Wrong")
+    count = 0
+    score = 0
+    while (count <= 9):
+        count += 1
+        num1 = randint(1, 10)
+        num2 = randint(1, 10)
+        easy_multiplication = num1 * num2
+        answer = input(f'{num1} * {num2} \n')
+        ans = int(answer)
+        if ans == easy_multiplication:
+            print('Correct')
+            score += 1
+        else:
+            print('Inccorect')
+    else:
+        print('You got ' + str(score) + f' correct out of {count}!')
+        option = int(input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n'))
+        if option == 1:
+            easy_level_multiplication()
+        if option == 2:
+            easy_level()
+        if option == 3:
+            game_start()
+        if option == 4:
+            main()
 
 # Creating easy level division test
 def easy_level_division():
