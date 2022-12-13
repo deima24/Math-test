@@ -98,23 +98,42 @@ def easy_level_multiplication():
 
 # Creating easy level division test
 def easy_level_division():
-    while True:
+    count = 0
+    score = 0
+    while (count <= 9):
+        count += 1
         num1 = randint(1, 10)
         num2 = randint(1, 10)
 
         if num1%num2 == 0:
-            easy_subtract = num1 / num2
+            easy_division = num1 / num2
             answer = input(f'{num1} / {num2} \n')
             ans = int(answer)
-            print('Correct' if ans == easy_subtract else 'Wrong')
-        elif num2%num1 == 0:
-            easy_subtract = num2 / num1
+            if ans == easy_division:
+                print('Correct')
+                score += 1
+            else:
+                print('Inccorect')
+        if num2%num1 == 0:
+            easy_division = num2 / num1
             answer = input(f'{num2} / {num1} \n')
             ans = int(answer)
-            print('Correct' if ans == easy_subtract else 'Wrong')
-        if not answer:
-            break
-
+            if ans == easy_division:
+                print('Correct')
+                score += 1
+            else:
+                print('Inccorect')
+    else:
+        print('You got ' + str(score) + f' correct out of {count}!')
+        option = int(input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n'))
+        if option == 1:
+            easy_level_division()()
+        if option == 2:
+            easy_level()
+        if option == 3:
+            game_start()
+        if option == 4:
+            main()
 
 # Creating what user want to do in a easy level
 def easy_level():
