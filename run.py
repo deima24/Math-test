@@ -32,18 +32,41 @@ def easy_level_addition():
 
 # Easy level subtract
 def easy_level_subtract():
-    num1 = randint(1, 10)
-    num2 = randint(1, 10)
-    if (num1 > num2):
-        easy_subtract = num1 - num2
-        answer = input(f'{num1} - {num2} \n')
-        ans = int(answer)
-        print('Correct' if ans == easy_subtract else 'Wrong')
-    elif (num2 > num1):
-        easy_subtract = num2 - num1
-        answer = input(f'{num2} - {num1} \n')
-        ans = int(answer)
-        print('Correct' if ans == easy_subtract else 'Wrong')
+    count = 0
+    score = 0
+    while (count < 10):
+        count += 1
+        num1 = randint(1, 10)
+        num2 = randint(1, 10)
+        if (num1 > num2):
+            easy_subtract = num1 - num2
+            answer = input(f'{num1} - {num2} \n')
+            ans = int(answer)
+            if ans == easy_subtract:
+                print('Correct')
+                score += 1
+            else:
+                print('Inccorect')
+        elif (num2 > num1):
+            easy_subtract = num2 - num1
+            answer = input(f'{num2} - {num1} \n')
+            ans = int(answer)
+            if ans == easy_subtract:
+                print('Correct')
+                score +=1
+            else:
+                print('Inccorect')
+    else:
+        print('You got ' + str(score) + f' correct out of {count} !')
+        option = int(input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n'))
+        if option == 1:
+            easy_level_subtract()
+        if option == 2:
+            easy_level()
+        if option == 3:
+            game_start()
+        if option == 4:
+            main()
 
 # Easy level multiplication
 def easy_level_multiplication():
