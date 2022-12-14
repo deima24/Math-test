@@ -5,8 +5,9 @@ print("Welcome to the Math test!")
 # Easy level addition, 
 # After every question prints out is it was answered correct or inccorect
 # At the end shows how musc score you have (how many answered Correct)
-# When finnished gives user the option to select what it want to to
+# When finnished gives user the option to select what it want to do
 # after the test
+# If the user answered inccorect , then the game shows the answer
 def easy_level_addition():
     count = 0
     score = 0
@@ -18,13 +19,14 @@ def easy_level_addition():
         answer = input(f'{num1} + {num2} \n')
         ans = int(answer)
         if ans == easy_addition:
-            print('Correct')
+            print('Correct!')
             score += 1
         else:
-            print('Inccorect')
+            print('Inccorect!\n'
+            f'Answer was {easy_addition}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
-        option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5)Exit \n')
+        option = input('What you want to do now? \n1)Restart \n2)Go back to easy level \n3)Select difrent level \n4)Back to main menu \n5)Exit \n')
         if option == "1":
             easy_level_addition()
         if option == "2":
@@ -39,8 +41,9 @@ def easy_level_addition():
 # Easy level subtract
 # After every question prints out is it was answered correct or inccorect
 # At the end shows how musc score you have (how many answered Correct)
-# When finnished gives user the option to select what it want to to
+# When finnished gives user the option to select what it want to do
 # after the test
+# If the user answered inccorect , then the game shows the answer
 def easy_level_subtract():
     count = 0
     score = 0
@@ -56,16 +59,18 @@ def easy_level_subtract():
                 print('Correct')
                 score += 1
             else:
-                print('Inccorect')
+                print('Inccorect!\n'
+                f'Answer was {easy_subtract}')
         elif (num2 > num1):
             easy_subtract = num2 - num1
             answer = input(f'{num2} - {num1} \n')
             ans = int(answer)
             if ans == easy_subtract:
-                print('Correct')
+                print('Correct!')
                 score +=1
             else:
-                print('Inccorect')
+                print('Inccorect!\n'
+                f'Answer was {easy_subtract}')
     else:
         print('You got ' + str(score) + f' correct out of {count} !')
         option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5)Exit \n')
@@ -85,6 +90,7 @@ def easy_level_subtract():
 # At the end shows how musc score you have (how many answered Correct)
 # When finnished gives user the option to select what it want to to
 # after the test
+# If the user answered inccorect , then the game shows the answer
 def easy_level_multiplication():
     count = 0
     score = 0
@@ -96,10 +102,11 @@ def easy_level_multiplication():
         answer = input(f'{num1} * {num2} \n')
         ans = int(answer)
         if ans == easy_multiplication:
-            print('Correct')
+            print('Correct!')
             score += 1
         else:
-            print('Inccorect')
+            print('Inccorect!\n'
+            f'Answer was {easy_multiplication}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
         option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5)Exit \n')
@@ -119,6 +126,7 @@ def easy_level_multiplication():
 # At the end shows how musc score you have (how many answered Correct)
 # When finnished gives user the option to select what it want to to
 # after the test
+# If the user answered inccorect , then the game shows the answer
 def easy_level_division():
     count = 0
     score = 0
@@ -132,19 +140,21 @@ def easy_level_division():
             answer = input(f'{num1} / {num2} \n')
             ans = int(answer)
             if ans == easy_division:
-                print('Correct')
+                print('Correct!')
                 score += 1
             else:
-                print('Inccorect')
+                print('Inccorect!\n'
+                f'Answer was {easy_division}')
         if num2%num1 == 0:
             easy_division = num2 / num1
             answer = input(f'{num2} / {num1} \n')
             ans = int(answer)
             if ans == easy_division:
-                print('Correct')
+                print('Correct!')
                 score += 1
             else:
-                print('Inccorect')
+                print('Inccorect!\n'
+                f'Answer was {easy_division}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
         option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5)Exit \n')
@@ -164,6 +174,7 @@ def easy_level_division():
 # At the end shows how musc score you have (how many answered Correct)
 # When finnished gives user the option to select what it want to to
 # after the test
+# If the user answered inccorect , then the game shows the answer
 def medium_level_addition():
     count = 0
     score = 0
@@ -175,10 +186,11 @@ def medium_level_addition():
         answer = input(f'{num1} + {num2} \n')
         ans = int(answer)
         if ans == medium_addition:
-            print('Correct')
+            print('Correct!')
             score += 1
         else:
-            print('Inccorect')
+            print('Inccorect!\n'
+            f'Answer was {medium_addition}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
         option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5)Exit \n')
@@ -196,8 +208,9 @@ def medium_level_addition():
 # Starting medium level subtraction
 # After every question prints out is it was answered correct or inccorect
 # At the end shows how musc score you have (how many answered Correct)
-# When finnished gives user the option to select what it want to to
+# When finnished gives user the option to select what it want to do
 # after the test
+# If the user answered inccorect , then the game shows the answer
 def medium_level_subtract():
     count = 0
     score = 0
@@ -210,19 +223,21 @@ def medium_level_subtract():
             answer = input(f'{num1} - {num2} \n')
             ans = int(answer)
             if ans == medium_subtract:
-                print('Correct')
+                print('Correct!')
                 score += 1
             else:
-                print('Inccorect')
+                print('Inccorect!\n'
+                f'Answer was {medium_subtract}')
         elif (num2 > num1):
             medium_subtract = num2 - num1
             answer = input(f'{num2} - {num1} \n')
             ans = int(answer)
             if ans == medium_subtract:
-                print('Correct')
+                print('Correct!')
                 score +=1
             else:
-                print('Inccorect')
+                print('Inccorect!\n'
+                f'Answer was {medium_subtract}')
     else:
         print('You got ' + str(score) + f' correct out of {count} !')
         option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5)Exit \n')
@@ -240,8 +255,9 @@ def medium_level_subtract():
 # Starting medium level multiplication
 # After every question prints out is it was answered correct or inccorect
 # At the end shows how musc score you have (how many answered Correct)
-# When finnished gives user the option to select what it want to to
+# When finnished gives user the option to select what it want to do
 # after the test
+# If the user answered inccorect , then the game shows the answer
 def medium_level_multiplication():
     count = 0
     score = 0
@@ -253,10 +269,11 @@ def medium_level_multiplication():
         answer = input(f'{num1} * {num2} \n')
         ans = int(answer)
         if ans == medium_multiplication:
-            print('Correct')
+            print('Correct!')
             score += 1
         else:
-            print('Inccorect')
+            print('Inccorect!\n'
+            f'Answer was {medium_multiplication}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
         option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5) Exit \n')
@@ -274,8 +291,9 @@ def medium_level_multiplication():
 # Starting medium level division
 # After every question prints out is it was answered correct or inccorect
 # At the end shows how musc score you have (how many answered Correct)
-# When finnished gives user the option to select what it want to to
+# When finnished gives user the option to select what it want to do
 # after the test
+# If the user answered inccorect , then the game shows the answer
 def medium_level_division():
     count = 0
     score = 0
@@ -289,19 +307,21 @@ def medium_level_division():
             answer = input(f'{num1} / {num2} \n')
             ans = int(answer)
             if ans == medium_division:
-                print('Correct')
+                print('Correct!')
                 score += 1
             else:
-                print('Inccorect')
+                print('Inccorect!\n'
+                f'Answer was {medium_division}')
         if num2%num1 == 0:
             medium_division = num2 / num1
             answer = input(f'{num2} / {num1} \n')
             ans = int(answer)
             if ans == medium_division:
-                print('Correct')
+                print('Correct!')
                 score += 1
             else:
-                print('Inccorect')
+                print('Inccorect!\n'
+                f'Answer was {medium_division}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
         option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5) Exit \n')
