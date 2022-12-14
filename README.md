@@ -47,3 +47,26 @@ After the game user will see how many correct answers it answered out of how man
 (restart game, go back to easy level, select difrent level, back to main menu or exit game).
 
 ![End game](Images/end%20game.png)
+
+# Bugs
+
+## Solved bugs
+
+- When doing division sometimes game showed to divide smaler number to a bigger number and the
+answers were with remainder. fixed by adding if statement and % so there would be no remainders.
+- Had an issue with the grammar when user had to type what it wanted but the game didn't recognise
+the answer because the grammar was wrong.
+- Subtraction was the same as division game was asking to subtract small number with a bigger so the 
+answer would be negative. So I created if statement to check the numbers and put bigger one in the front.
+
+
+## Remaining Bugs
+
+- In the division game shows only few questions and at the end it show that is asked 10 questions.
+- When playing the game and user enters not a number the game crash.
+
+# Future Plans
+
+- Fix the bugs that left with a division and by not entering an number when playing.
+- create hard mode for higher numbers
+
