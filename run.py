@@ -193,7 +193,7 @@ def medium_level_addition():
             f'Answer was {medium_addition}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
-        option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5)Exit \n')
+        option = input('What you want to do now? \n1)restart \n2)go back to medium level \n3)select difrent level \n4)back to main menu \n5)Exit \n')
         if option == '1':
             medium_level_addition()
         if option == '2':
@@ -240,7 +240,7 @@ def medium_level_subtract():
                 f'Answer was {medium_subtract}')
     else:
         print('You got ' + str(score) + f' correct out of {count} !')
-        option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5)Exit \n')
+        option = input('What you want to do now? \n1)restart \n2)go back to medium level \n3)select difrent level \n4)back to main menu \n5)Exit \n')
         if option == '1':
             medium_level_subtract()
         if option == '2':
@@ -276,7 +276,7 @@ def medium_level_multiplication():
             f'Answer was {medium_multiplication}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
-        option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5) Exit \n')
+        option = input('What you want to do now? \n1)restart \n2)go back to medium level \n3)select difrent level \n4)back to main menu \n5) Exit \n')
         if option == '1':
             medium_level_multiplication()
         if option == '2':
@@ -324,7 +324,7 @@ def medium_level_division():
                 f'Answer was {medium_division}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
-        option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5) Exit \n')
+        option = input('What you want to do now? \n1)restart \n2)go back to medium level \n3)select difrent level \n4)back to main menu \n5) Exit \n')
         if option == '1':
             medium_level_division()
         if option == '2':
