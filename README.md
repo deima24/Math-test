@@ -70,3 +70,15 @@ answer would be negative. So I created if statement to check the numbers and put
 - Fix the bugs that left with a division and by not entering an number when playing.
 - create hard mode for higher numbers
 
+# Technologies Used
+
+## Languages
+
+- Python programming language for the logic of the program
+
+# Frameworks & Tools
+
+- Git was used for version control within VSCode to push the code to GitHub
+- GitHub was used as a remote repository to store project code
+- Heroku Platform was used to deploy the project into live environment
+- PEP8 was used to check my code against Python conventions
