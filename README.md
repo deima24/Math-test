@@ -88,3 +88,11 @@ answer would be negative. So I created if statement to check the numbers and put
 
 PEP8 Validation Service was used to check the code for PEP8 requirements. All the code passes.
 
+# Manual Testing
+
+- Checked if options in the main all are working (Start game, Game rules, Exit game)
+- If the user selects start game then he will have 3 options which all of them are working
+- After user selected then 5 options apear which user needs to type which option user wants 
+- tested all options when user is playing game and what heppens when user types wrong answer
+he will get message Incorect or if letter is typep it will say Please enter a number
+- At the end of game user will be ask what it wants to do after the game
