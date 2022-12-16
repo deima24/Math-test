@@ -58,12 +58,13 @@ answers were with remainder. fixed by adding if statement and % so there would b
 the answer because the grammar was wrong.
 - Subtraction was the same as division game was asking to subtract small number with a bigger so the 
 answer would be negative. So I created if statement to check the numbers and put bigger one in the front.
+- When playing the game and user enters not a number the game crash. Fixed by adding try and exept to catch str and put as error message.
 
 
 ## Remaining Bugs
 
 - In the division game shows only few questions and at the end it show that is asked 10 questions.
-- When playing the game and user enters not a number the game crash.
+
 
 # Future Plans
 
