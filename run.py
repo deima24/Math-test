@@ -16,12 +16,15 @@ def easy_level_addition():
         num1 = randint(1, 10)
         num2 = randint(1, 10)
         easy_addition = num1 + num2
-        answer = input(f'{num1} + {num2} \n')
-        ans = int(answer)
+        try:
+            answer = input(f'{num1} + {num2} \n')
+            ans = int(answer)
+        except ValueError:
+            print("Please enter a number!")
         if ans == easy_addition:
             print('Correct!')
             score += 1
-        else:
+        elif ans != easy_addition:
             print('Inccorect!\n'
             f'Answer was {easy_addition}')
     else:
@@ -53,18 +56,24 @@ def easy_level_subtract():
         num2 = randint(1, 10)
         if (num1 > num2):
             easy_subtract = num1 - num2
-            answer = input(f'{num1} - {num2} \n')
-            ans = int(answer)
+            try:
+                answer = input(f'{num1} - {num2} \n')
+                ans = int(answer)
+            except ValueError:
+                print("Please enter a number!")
             if ans == easy_subtract:
                 print('Correct')
                 score += 1
             else:
                 print('Inccorect!\n'
                 f'Answer was {easy_subtract}')
-        elif (num2 > num1):
+        if (num2 > num1):
             easy_subtract = num2 - num1
-            answer = input(f'{num2} - {num1} \n')
-            ans = int(answer)
+            try:
+                answer = input(f'{num2} - {num1} \n')
+                ans = int(answer)
+            except ValueError:
+                print("Please enter a number!")
             if ans == easy_subtract:
                 print('Correct!')
                 score +=1
@@ -99,8 +108,11 @@ def easy_level_multiplication():
         num1 = randint(1, 10)
         num2 = randint(1, 10)
         easy_multiplication = num1 * num2
-        answer = input(f'{num1} * {num2} \n')
-        ans = int(answer)
+        try:
+            answer = input(f'{num1} * {num2} \n')
+            ans = int(answer)
+        except ValueError:
+            print("Please enter a number!")
         if ans == easy_multiplication:
             print('Correct!')
             score += 1
@@ -137,8 +149,11 @@ def easy_level_division():
 
         if num1%num2 == 0:
             easy_division = num1 / num2
-            answer = input(f'{num1} / {num2} \n')
-            ans = int(answer)
+            try:
+                answer = input(f'{num1} / {num2} \n')
+                ans = int(answer)
+            except ValueError:
+                print("Please enter a number!")
             if ans == easy_division:
                 print('Correct!')
                 score += 1
@@ -147,8 +162,11 @@ def easy_level_division():
                 f'Answer was {easy_division}')
         if num2%num1 == 0:
             easy_division = num2 / num1
-            answer = input(f'{num2} / {num1} \n')
-            ans = int(answer)
+            try:
+                answer = input(f'{num2} / {num1} \n')
+                ans = int(answer)
+            except ValueError:
+                print("Please enter a number")
             if ans == easy_division:
                 print('Correct!')
                 score += 1
@@ -183,8 +201,11 @@ def medium_level_addition():
         num1 = randint(11, 100)
         num2 = randint(11, 100)
         medium_addition = num1 + num2
-        answer = input(f'{num1} + {num2} \n')
-        ans = int(answer)
+        try:
+            answer = input(f'{num1} + {num2} \n')
+            ans = int(answer)
+        except ValueError:
+            print("Please enter a number!")
         if ans == medium_addition:
             print('Correct!')
             score += 1
@@ -220,18 +241,24 @@ def medium_level_subtract():
         num2 = randint(11, 100)
         if (num1 > num2):
             medium_subtract = num1 - num2
-            answer = input(f'{num1} - {num2} \n')
-            ans = int(answer)
+            try:
+                answer = input(f'{num1} - {num2} \n')
+                ans = int(answer)
+            except ValueError:
+                print("Please enter a number!")
             if ans == medium_subtract:
                 print('Correct!')
                 score += 1
             else:
                 print('Inccorect!\n'
                 f'Answer was {medium_subtract}')
-        elif (num2 > num1):
+        if (num2 > num1):
             medium_subtract = num2 - num1
-            answer = input(f'{num2} - {num1} \n')
-            ans = int(answer)
+            try:
+                answer = input(f'{num2} - {num1} \n')
+                ans = int(answer)
+            except ValueError:
+                print("Please enter a number!")
             if ans == medium_subtract:
                 print('Correct!')
                 score +=1
@@ -266,8 +293,11 @@ def medium_level_multiplication():
         num1 = randint(11, 100)
         num2 = randint(11, 100)
         medium_multiplication = num1 * num2
-        answer = input(f'{num1} * {num2} \n')
-        ans = int(answer)
+        try:
+            answer = input(f'{num1} * {num2} \n')
+            ans = int(answer)
+        except ValueError:
+            print("Please enter a number")
         if ans == medium_multiplication:
             print('Correct!')
             score += 1
@@ -304,8 +334,11 @@ def medium_level_division():
 
         if num1%num2 == 0:
             medium_division = num1 / num2
-            answer = input(f'{num1} / {num2} \n')
-            ans = int(answer)
+            try:
+                answer = input(f'{num1} / {num2} \n')
+                ans = int(answer)
+            except ValueError:
+                print("Please enter a number!")
             if ans == medium_division:
                 print('Correct!')
                 score += 1
@@ -314,8 +347,11 @@ def medium_level_division():
                 f'Answer was {medium_division}')
         if num2%num1 == 0:
             medium_division = num2 / num1
-            answer = input(f'{num2} / {num1} \n')
-            ans = int(answer)
+            try:
+                answer = input(f'{num2} / {num1} \n')
+                ans = int(answer)
+            except ValueError:
+                print("Please enter a number!")
             if ans == medium_division:
                 print('Correct!')
                 score += 1

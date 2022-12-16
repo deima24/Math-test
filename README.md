@@ -82,3 +82,8 @@ answer would be negative. So I created if statement to check the numbers and put
 - GitHub was used as a remote repository to store project code
 - Heroku Platform was used to deploy the project into live environment
 - PEP8 was used to check my code against Python conventions
+
+# Validation
+
+PEP8 Validation Service was used to check the code for PEP8 requirements. All the code passes.
+
