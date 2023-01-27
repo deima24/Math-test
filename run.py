@@ -363,7 +363,7 @@ def medium_level_division():
 # Asking user what the user wants to do in a medium level
 # User can select one of the 4 choses
 def medium_level():
-    medium_level_select = input("What would you like to do in this level? \nDivision \nMultiplication \nSubtract \nAddition \nBack \n")
+    medium_level_select = input("What would you like to do in this level? \nDivision \nMultiplication \nSubtract \nAddition \nBack \n").lower()
     while medium_level_select not in ("division", "multiplication", "subtract", "addition", "back"):
         print("Wrong word. Try Again")
         medium_level()
@@ -385,7 +385,7 @@ def medium_level():
 # Creating what user want to do in a easy level
 # User can select what it wants to do in this level
 def easy_level():
-    easy_level_select = input("What would you like to do in this level? \nDivision \nMultiplication \nSubtract \nAddition \nBack\n")
+    easy_level_select = input("What would you like to do in this level? \nDivision \nMultiplication \nSubtract \nAddition \nBack\n").lower()
     while easy_level_select not in ("division", "multiplication", "subtract", "addition", "back"):
         print("Wrong word. Try Again")
         easy_level()
