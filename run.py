@@ -21,6 +21,7 @@ def easy_level_addition():
             ans = int(answer)
         except ValueError:
             print("Please enter a number!")
+            continue
         if ans == easy_addition:
             print('Correct!')
             score += 1
@@ -28,7 +29,12 @@ def easy_level_addition():
             print('Inccorect!\n' f'Answer was {easy_addition}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
-        option = input('What you want to do now? \n1)Restart \n2)Go back to easy level \n3)Select difrent level \n4)Back to main menu \n5)Else press any key to Exit \n')
+        option = input("""What you want to do now? 
+        1)Restart
+        2)Go back to easy level
+        3)Select difrent level 
+        4)Back to main menu 
+        5)Else press any key to Exit \n""")
         if option == "1":
             easy_level_addition()
         if option == "2":
@@ -60,6 +66,7 @@ def easy_level_subtract():
                 ans = int(answer)
             except ValueError:
                 print("Please enter a number!")
+                continue
             if ans == easy_subtract:
                 print('Correct')
                 score += 1
@@ -72,6 +79,7 @@ def easy_level_subtract():
                 ans = int(answer)
             except ValueError:
                 print("Please enter a number!")
+                continue
             if ans == easy_subtract:
                 print('Correct!')
                 score += 1
@@ -79,7 +87,12 @@ def easy_level_subtract():
                 print('Inccorect!\n' f'Answer was {easy_subtract}')
     else:
         print('You got ' + str(score) + f' correct out of {count} !')
-        option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5)Else press any key to Exit \n')
+        option = input("""What you want to do now? 
+        1)Restart 
+        2)Go back to easy level 
+        3)Select difrent level 
+        4)Back to main menu
+        5)Else press any key to Exit \n""")
         if option == "1":
             easy_level_subtract()
         if option == '2':
@@ -110,6 +123,7 @@ def easy_level_multiplication():
             ans = int(answer)
         except ValueError:
             print("Please enter a number!")
+            continue
         if ans == easy_multiplication:
             print('Correct!')
             score += 1
@@ -117,7 +131,12 @@ def easy_level_multiplication():
             print('Inccorect!\n' f'Answer was {easy_multiplication}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
-        option = input('What you want to do now? \n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5)Else press any key to Exit \n')
+        option = input("""What you want to do now?
+        1)Restart
+        2)Go back to easy level
+        3)Select difrent level
+        4)Back to main menu
+        5)Else press any key to Exit \n""")
         if option == '1':
             easy_level_multiplication()
         if option == '2':
@@ -150,6 +169,7 @@ def easy_level_division():
                 ans = int(answer)
             except ValueError:
                 print("Please enter a number!")
+                continue
             if ans == easy_division:
                 print('Correct!')
                 score += 1
@@ -162,6 +182,7 @@ def easy_level_division():
                 ans = int(answer)
             except ValueError:
                 print("Please enter a number")
+                continue
             if ans == easy_division:
                 print('Correct!')
                 score += 1
@@ -169,7 +190,12 @@ def easy_level_division():
                 print('Inccorect!\n' f'Answer was {easy_division}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
-        option = input('What you want to do now?\n1)restart \n2)go back to easy level \n3)select difrent level \n4)back to main menu \n5)Else press any key to Exit \n')
+        option = input('''What you want to do now?
+        1)Restart
+        2)Go back to easy level
+        3)Select difrent level
+        4)Back to main menu
+        5)Else press any key to Exit \n''')
         if option == '1':
             easy_level_division()
         if option == '2':
@@ -200,6 +226,7 @@ def medium_level_addition():
             ans = int(answer)
         except ValueError:
             print("Please enter a number!")
+            continue
         if ans == medium_addition:
             print('Correct!')
             score += 1
@@ -207,7 +234,12 @@ def medium_level_addition():
             print('Inccorect!\n' f'Answer was {medium_addition}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
-        option = input('What you want to do now? \n1)restart \n2)go back to medium level \n3)select difrent level \n4)back to main menu \n5)Else press any key to Exit \n')
+        option = input('''What you want to do now?
+        1)Restart
+        2)Go back to medium level
+        3)Select difrent level
+        4)Back to main menu
+        5)Else press any key to Exit \n''')
         if option == '1':
             medium_level_addition()
         if option == '2':
@@ -239,6 +271,7 @@ def medium_level_subtract():
                 ans = int(answer)
             except ValueError:
                 print("Please enter a number!")
+                continue
             if ans == medium_subtract:
                 print('Correct!')
                 score += 1
@@ -251,6 +284,7 @@ def medium_level_subtract():
                 ans = int(answer)
             except ValueError:
                 print("Please enter a number!")
+                continue
             if ans == medium_subtract:
                 print('Correct!')
                 score += 1
@@ -258,7 +292,12 @@ def medium_level_subtract():
                 print('Inccorect!\n' f'Answer was {medium_subtract}')
     else:
         print('You got ' + str(score) + f' correct out of {count} !')
-        option = input('What you want to do now? \n1)restart \n2)go back to medium level \n3)select difrent level \n4)back to main menu \n5)Else press any key to Exit \n')
+        option = input('''What you want to do now? 
+        1)Restart
+        2)Go back to medium level
+        3)Select difrent level
+        4)Back to main menu
+        5)Else press any key to Exit \n''')
         if option == '1':
             medium_level_subtract()
         if option == '2':
@@ -289,6 +328,7 @@ def medium_level_multiplication():
             ans = int(answer)
         except ValueError:
             print("Please enter a number")
+            continue
         if ans == medium_multiplication:
             print('Correct!')
             score += 1
@@ -296,7 +336,12 @@ def medium_level_multiplication():
             print('Inccorect!\n' f'Answer was {medium_multiplication}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
-        option = input('What you want to do now? \n1)restart \n2)go back to medium level \n3)select difrent level \n4)back to main menu \n5)Else press any key to Exit \n')
+        option = input('''What you want to do now? 
+        1)Restart
+        2)Go back to medium level
+        3)Select difrent level
+        4)Back to main menu
+        5)Else press any key to Exit \n''')
         if option == '1':
             medium_level_multiplication()
         if option == '2':
@@ -329,6 +374,7 @@ def medium_level_division():
                 ans = int(answer)
             except ValueError:
                 print("Please enter a number!")
+                continue
             if ans == medium_division:
                 print('Correct!')
                 score += 1
@@ -341,6 +387,7 @@ def medium_level_division():
                 ans = int(answer)
             except ValueError:
                 print("Please enter a number!")
+                continue
             if ans == medium_division:
                 print('Correct!')
                 score += 1
@@ -348,7 +395,12 @@ def medium_level_division():
                 print('Inccorect!\n' f'Answer was {medium_division}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
-        option = input('What you want to do now? \n1)restart \n2)go back to medium level \n3)select difrent level \n4)back to main menu \n5)Else press any key to Exit \n')
+        option = input('''What you want to do now?
+        1)Restart
+        2)Go back to medium level
+        3)Select difrent level
+        4)Back to main menu
+        5)Else press any key to Exit \n''')
         if option == '1':
             medium_level_division()
         if option == '2':
@@ -363,7 +415,12 @@ def medium_level_division():
 # Asking user what the user wants to do in a medium level
 # User can select one of the 4 choses
 def medium_level():
-    medium_level_select = input("What would you like to do in this level? \nDivision \nMultiplication \nSubtract \nAddition \nBack \n").lower()
+    medium_level_select = input("""What would you like to do in this level?
+    Division
+    Multiplication
+    Subtract
+    Addition
+    Back \n""").lower()
     while medium_level_select not in ("division", "multiplication", "subtract", "addition", "back"):
         print("Wrong word. Try Again")
         medium_level()
@@ -385,7 +442,12 @@ def medium_level():
 # Creating what user want to do in a easy level
 # User can select what it wants to do in this level
 def easy_level():
-    easy_level_select = input("What would you like to do in this level? \nDivision \nMultiplication \nSubtract \nAddition \nBack\n").lower()
+    easy_level_select = input("""What would you like to do in this level?
+    Division
+    Multiplication
+    Subtract
+    Addition
+    Back\n""").lower()
     while easy_level_select not in ("division", "multiplication", "subtract", "addition", "back"):
         print("Wrong word. Try Again")
         easy_level()
@@ -428,19 +490,19 @@ def game_start():
 # Game rules
 def game_rules():
     print("\nThis game lets you test you'r math knowledge")
-    print("\nYou can select 1 of 2 difficulties"
-    "\nFirst one is numbers between 1 and 10."
-    "\nSecond one is numbers between 11 and 100."
-    "\nBy selecting difficulty then you can select what you want to do."
-    "\nYou have 4 option"
-    "\nAddition"
-    "\nSubtraction"
-    "\nMultiplication"
-    "\nDivision\n")
-    game_rules_input = input("Please select what you want to do know."
-    "\n1) Go back."
-    "\n2) Game Start"
-    "\n3) Exit Game \n")
+    print("""\nYou can select 1 of 2 difficulties
+    First one is numbers between 1 and 10.
+    Second one is numbers between 11 and 100.
+    By selecting difficulty then you can select what you want to do.
+    You have 4 option
+    Addition
+    Subtraction
+    Multiplication
+    Division\n""")
+    game_rules_input = input("""Please select what you want to do know.
+    1) Go back.
+    2) Game Start
+    3) Exit Game \n""")
     if game_rules_input == "1":
         main()
     elif game_rules_input == "2":
