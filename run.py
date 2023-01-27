@@ -24,7 +24,7 @@ def easy_level_addition():
         if ans == easy_addition:
             print('Correct!')
             score += 1
-        elif ans != easy_addition:
+        else:
             print('Inccorect!\n' f'Answer was {easy_addition}')
     else:
         print('You got ' + str(score) + f' correct out of {count}!')
