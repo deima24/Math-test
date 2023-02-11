@@ -96,3 +96,23 @@ PEP8 Validation Service was used to check the code for PEP8 requirements. All th
 - tested all options when user is playing game and what heppens when user types wrong answer
 he will get message Incorect or if letter is typep it will say Please enter a number
 - At the end of game user will be ask what it wants to do after the game
+
+
+# Deployment
+
+## Heroku
+
+This application has been deployed from GitHub to Heroku by following the steps:
+
+1. Create or log in to your account at heroku.com
+2. Create a new app, add a unique app name (this project is named "Math-Test") and choose your region
+3. Click on create app
+4. Go to "Settings"
+5. In Config Vars add a key 'PORT' and value '8000'.
+6. Add required buildpacks. For this project, I set up 'Python' and 'node.js' in that order.
+7. Go to "Deploy" and select "GitHub" in "Deployment method"
+8. To link up our Heroku app to our Github repository code enter your repository name, click 'Search' and then 'Connect' when it shows below
+9. Choose the branch you want to buid your app from
+10. If prefered, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository or 
+you can do it manualy by pressing "Deploy Branch"
+11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a 'View' button to take you to your deployed link.
