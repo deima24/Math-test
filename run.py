@@ -3,12 +3,6 @@ from random import randint
 print("Welcome to the Math test!")
 
 
-# Easy level addition,
-# After every question prints out is it was answered correct or inccorect
-# At the end shows how musc score you have (how many answered Correct)
-# When finnished gives user the option to select what it want to do
-# after the test
-# If the user answered inccorect , then the game shows the answer
 def easy_level_addition():
     count = 0
     score = 0
@@ -21,8 +15,7 @@ def easy_level_addition():
             answer = input(f"{num1} + {num2} \n")
             ans = int(answer)
         except ValueError:
-            print("Please enter a number!\n"
-            f"Answer was {easy_addition}")
+            print("Please enter a number!\n" f"Answer was {easy_addition}")
             continue
         if ans == easy_addition:
             print("Correct!")
@@ -51,12 +44,15 @@ def easy_level_addition():
             exit()
 
 
-# Easy level subtract
+# Easy level addition,
 # After every question prints out is it was answered correct or inccorect
-# At the end shows how musc score you have (how many answered Correct)
+# If it was answered incorectly it will print out the correct answer
+# At the end shows how much score you have (how many answered Correct)
 # When finnished gives user the option to select what it want to do
 # after the test
-# If the user answered inccorect , then the game shows the answer
+# If answer is left blank it will ask to enter a number
+
+
 def easy_level_subtract():
     count = 0
     score = 0
@@ -70,8 +66,7 @@ def easy_level_subtract():
                 answer = input(f"{num1} - {num2} \n")
                 ans = int(answer)
             except ValueError:
-                print("Please enter a number!\n"
-                f"Answer was {easy_subtract}")
+                print("Please enter a number!\n" f"Answer was {easy_subtract}")
                 continue
             if ans == easy_subtract:
                 print("Correct!")
@@ -84,8 +79,7 @@ def easy_level_subtract():
                 answer = input(f"{num2} - {num1} \n")
                 ans = int(answer)
             except ValueError:
-                print("Please enter a number!\n"
-                f"Answer was {easy_subtract}")
+                print("Please enter a number!\n" f"Answer was {easy_subtract}")
                 continue
             if ans == easy_subtract:
                 print("Correct!")
@@ -114,12 +108,16 @@ def easy_level_subtract():
             exit()
 
 
-# Easy level multiplication
+# Easy level subtract
 # After every question prints out is it was answered correct or inccorect
-# At the end shows how musc score you have (how many answered Correct)
-# When finnished gives user the option to select what it want to to
+# At the end shows how much score you have (how many answered Correct)
+# When finnished gives user the option to select what it want to do,
 # after the test
 # If the user answered inccorect , then the game shows the answer
+# If left blank it will ask to enter a number
+# Entering a letter it will also ask to enter a number
+
+
 def easy_level_multiplication():
     count = 0
     score = 0
@@ -162,12 +160,16 @@ def easy_level_multiplication():
             exit()
 
 
-# Creating easy level division test
+# Easy level multiplication
 # After every question prints out is it was answered correct or inccorect
-# At the end shows how musc score you have (how many answered Correct)
-# When finnished gives user the option to select what it want to to
+# At the end shows how much score you have (how many answered Correct)
+# When finnished gives user the option to select what it want to do,
 # after the test
 # If the user answered inccorect , then the game shows the answer
+# If left blank it will ask to enter a number
+# Entering a letter it will also ask to enter a number
+
+
 def easy_level_division():
     count = 0
     score = 0
@@ -182,8 +184,7 @@ def easy_level_division():
                 answer = input(f"{num1} / {num2} \n")
                 ans = int(answer)
             except ValueError:
-                print("Please enter a number!\n"
-                f"Answer was {easy_division}")
+                print("Please enter a number!\n" f"Answer was {easy_division}")
                 continue
             if ans == easy_division:
                 print("Correct!")
@@ -196,8 +197,7 @@ def easy_level_division():
                 answer = input(f"{num2} / {num1} \n")
                 ans = int(answer)
             except ValueError:
-                print("Please enter a number\n"
-                f"Answer was {easy_division}")
+                print("Please enter a number\n" f"Answer was {easy_division}")
                 continue
             if ans == easy_division:
                 print("Correct!")
@@ -226,12 +226,16 @@ def easy_level_division():
             exit()
 
 
-# Starting medium level addition
+# Creating easy level division test
 # After every question prints out is it was answered correct or inccorect
-# At the end shows how musc score you have (how many answered Correct)
-# When finnished gives user the option to select what it want to to
+# At the end shows how much score you have (how many answered Correct)
+# When finnished gives user the option to select what it want to do,
 # after the test
 # If the user answered inccorect , then the game shows the answer
+# If left blank it will ask to enter a number
+# Entering a letter it will also ask to enter a number
+
+
 def medium_level_addition():
     count = 0
     score = 0
@@ -273,12 +277,16 @@ def medium_level_addition():
             exit()
 
 
-# Starting medium level subtraction
+# Starting medium level addition
 # After every question prints out is it was answered correct or inccorect
-# At the end shows how musc score you have (how many answered Correct)
-# When finnished gives user the option to select what it want to do
+# At the end shows how much score you have (how many answered Correct)
+# When finnished gives user the option to select what it want to do,
 # after the test
 # If the user answered inccorect , then the game shows the answer
+# If left blank it will ask to enter a number
+# Entering a letter it will also ask to enter a number
+
+
 def medium_level_subtract():
     count = 0
     score = 0
@@ -334,12 +342,16 @@ def medium_level_subtract():
             exit()
 
 
-# Starting medium level multiplication
+# Starting medium level subtraction
 # After every question prints out is it was answered correct or inccorect
-# At the end shows how musc score you have (how many answered Correct)
-# When finnished gives user the option to select what it want to do
+# At the end shows how much score you have (how many answered Correct)
+# When finnished gives user the option to select what it want to do,
 # after the test
 # If the user answered inccorect , then the game shows the answer
+# If left blank it will ask to enter a number
+# Entering a letter it will also ask to enter a number
+
+
 def medium_level_multiplication():
     count = 0
     score = 0
@@ -381,12 +393,16 @@ def medium_level_multiplication():
             exit()
 
 
-# Starting medium level division
+# Starting medium level multiplication
 # After every question prints out is it was answered correct or inccorect
-# At the end shows how musc score you have (how many answered Correct)
-# When finnished gives user the option to select what it want to do
+# At the end shows how much score you have (how many answered Correct)
+# When finnished gives user the option to select what it want to do,
 # after the test
 # If the user answered inccorect , then the game shows the answer
+# If left blank it will ask to enter a number
+# Entering a letter it will also ask to enter a number
+
+
 def medium_level_division():
     count = 0
     score = 0
@@ -443,8 +459,16 @@ def medium_level_division():
             exit()
 
 
-# Asking user what the user wants to do in a medium level
-# User can select one of the 4 choses
+# Starting medium level division
+# After every question prints out is it was answered correct or inccorect
+# At the end shows how much score you have (how many answered Correct)
+# When finnished gives user the option to select what it want to do
+# after the test
+# If the user answered inccorect , then the game shows the answer
+# If left blank it will ask to enter a number
+# Entering a letter it will also ask to enter a number
+
+
 def medium_level():
     medium_level_select = input(
         """What would you like to do in this level?
@@ -479,8 +503,14 @@ def medium_level():
         game_start()
 
 
-# Creating what user want to do in a easy level
-# User can select what it wants to do in this level
+# Asking user what the user wants to do in a medium level
+# User can select one of the 4 choses
+# If left blank it will say wrong word
+# Entering a number it will also ask to enter a word from the options
+# You can enter in lower case, upper case or mixed
+# the game will read it as lower case
+
+
 def easy_level():
     easy_level_select = input(
         """What would you like to do in this level?
@@ -515,8 +545,13 @@ def easy_level():
         game_start()
 
 
-# Checking what user has typed if it typed 1 or 2
-# If user typed none of the option get an error message
+# Creating what user want to do in a easy level
+# User can select what it wants to do in this level
+# Entering a number it will also ask to enter a word from the options
+# You can enter in lower case, upper case or mixed
+# the game will read it as lower case
+
+
 def game_start():
     print("1) Level 1 (1 - 10)")
     print("2) Level 2 (11 - 100)")
@@ -535,7 +570,13 @@ def game_start():
         game_start()
 
 
-# Game rules
+# Checking what user has typed if it typed 1, 2 or 3
+# If user typed none of the option get an message wrong input
+# If the user entered a letter or a number higher then 3
+# it will come as wrong input and game will ask to enter it again
+# If left blank you get the same wrong input
+
+
 def game_rules():
     print("\nThis game lets you test you'r math knowledge")
     print(
@@ -566,7 +607,10 @@ def game_rules():
         game_rules()
 
 
-# Asking user what they want to do read the rules or start the game
+# Game rules
+# Explanes the rules of the game and what user can do
+
+
 def main():
     print("1) Start the game")
     print("2) Game rules")
@@ -586,5 +630,8 @@ def main():
         print("Wrong input. Please try again.")
         main()
 
+
+# Asking user what they want to do read the rules or start the game
+# If wrong input entered it will say wrong input and will ask again
 
 main()
