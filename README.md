@@ -46,7 +46,7 @@ wrong you will get Inccorect message and the right answer.
 After the game user will see how many correct answers it answered out of how many and gives user 5 chooses
 (restart game, go back to easy level, select difrent level, back to main menu or exit game).
 
-![End game](Images/end%20game.png)
+![End game](Images/endgame.png)
 
 # Bugs
 
