@@ -116,3 +116,16 @@ This application has been deployed from GitHub to Heroku by following the steps:
 10. If prefered, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository or 
 you can do it manualy by pressing "Deploy Branch"
 11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a 'View' button to take you to your deployed link.
+
+
+# Credits
+
+## Code
+
+- [W3Scools](https://www.w3schools.com/) for ideas and inspiration.
+- Code Institute for how to deploy to Heroku.
+
+## Acknowledgements
+
+- Code Institute community on Slack for resources and support.
+- My Code Institute Mentor for feedback and suggestions.
