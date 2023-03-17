@@ -1,6 +1,20 @@
 from random import randint
 
-print("Welcome to the Math test!")
+WELCOME_MSG = """
+Welcome to the Math test!
+    1) Start the game
+    2) Game rules
+    3) Exit Game
+"""
+
+RESTART_MSG = """
+What you want to do now?
+    1)Restart
+    2)Go back to easy level
+    3)Select difrent level
+    4)Back to main menu
+    5)Else press any key to Exit
+"""
 
 
 def easy_level_addition():
@@ -24,14 +38,7 @@ def easy_level_addition():
             print("Inccorect!\n" f"Answer was {easy_addition}")
     else:
         print("You got " + str(score) + f" correct out of {count}!")
-        option = input(
-            """What you want to do now?
-        1)Restart
-        2)Go back to easy level
-        3)Select difrent level
-        4)Back to main menu
-        5)Else press any key to Exit \n"""
-        )
+        option = input(RESTART_MSG)
         if option == "1":
             easy_level_addition()
         if option == "2":
@@ -88,14 +95,7 @@ def easy_level_subtract():
                 print("Inccorect!\n" f"Answer was {easy_subtract}")
     else:
         print("You got " + str(score) + f" correct out of {count} !")
-        option = input(
-            """What you want to do now?
-        1)Restart
-        2)Go back to easy level
-        3)Select difrent level
-        4)Back to main menu
-        5)Else press any key to Exit \n"""
-        )
+        option = input(RESTART_MSG)
         if option == "1":
             easy_level_subtract()
         if option == "2":
@@ -140,14 +140,7 @@ def easy_level_multiplication():
             print("Inccorect!\n" f"Answer was {easy_multiplication}")
     else:
         print("You got " + str(score) + f" correct out of {count}!")
-        option = input(
-            """What you want to do now?
-        1)Restart
-        2)Go back to easy level
-        3)Select difrent level
-        4)Back to main menu
-        5)Else press any key to Exit \n"""
-        )
+        option = input(RESTART_MSG)
         if option == "1":
             easy_level_multiplication()
         if option == "2":
@@ -169,51 +162,60 @@ def easy_level_multiplication():
 # If left blank it will ask to enter a number
 # Entering a letter it will also ask to enter a number
 
+def division_operation(easy=True):
+    """
+    Asks users 10 division questions based on difficulty level.
+
+    Args:
+        easy (bool, optional): Whether to present easy or medium level
+        difficulty questions. Defaults to True.
+    """
+    if easy:
+        num1 = randint(1, 10)
+        num2 = randint(1, 10)
+    else:
+        num1 = randint(11, 100)
+        num2 = randint(11, 100)
+
 
 def easy_level_division():
     count = 0
     score = 0
     while count <= 9:
-        count += 1
+        
         num1 = randint(1, 10)
         num2 = randint(1, 10)
 
+        easy_division = None
+        user_msg = None
+
         if num1 % num2 == 0:
             easy_division = num1 / num2
-            try:
-                answer = input(f"{num1} / {num2} \n")
-                ans = int(answer)
-            except ValueError:
-                print("Please enter a number!\n" f"Answer was {easy_division}")
-                continue
-            if ans == easy_division:
-                print("Correct!")
-                score += 1
-            else:
-                print("Inccorect!\n" f"Answer was {easy_division}")
-        if num2 % num1 == 0:
+            user_msg = f"{num1} / {num2}"
+            
+        elif num2 % num1 == 0:
             easy_division = num2 / num1
-            try:
-                answer = input(f"{num2} / {num1} \n")
-                ans = int(answer)
-            except ValueError:
-                print("Please enter a number\n" f"Answer was {easy_division}")
-                continue
-            if ans == easy_division:
-                print("Correct!")
-                score += 1
-            else:
-                print("Inccorect!\n" f"Answer was {easy_division}")
+            user_msg = f"{num2} / {num1}"
+            
+        if not easy_division:
+            continue
+
+        count += 1
+        try:
+            answer = input(user_msg)
+            ans = int(answer)
+        except ValueError:
+            print("Please enter a number!\n" f"Answer was {easy_division}")
+            continue
+        if ans == easy_division:
+            print("Correct!")
+            score += 1
+        else:
+            print("Inccorect!\n" f"Answer was {easy_division}")
+
     else:
         print("You got " + str(score) + f" correct out of {count}!")
-        option = input(
-            """What you want to do now?
-        1)Restart
-        2)Go back to easy level
-        3)Select difrent level
-        4)Back to main menu
-        5)Else press any key to Exit \n"""
-        )
+        option = input(RESTART_MSG)
         if option == "1":
             easy_level_division()
         if option == "2":
@@ -553,21 +555,22 @@ def easy_level():
 
 
 def game_start():
-    print("1) Level 1 (1 - 10)")
-    print("2) Level 2 (11 - 100)")
-    print("3) Go Back")
-    level = input("What level of Math quiz do you want to play? ")
-    if level == "1":
-        print("starting Easy level")
-        easy_level()
-    elif level == "2":
-        print("Starting Medium level")
-        medium_level()
-    elif level == "3":
-        main()
-    else:
-        print("Wrong input. Please try again")
-        game_start()
+    while True:
+        print("1) Level 1 (1 - 10)")
+        print("2) Level 2 (11 - 100)")
+        print("3) Go Back")
+        level = input("What level of Math quiz do you want to play? ")
+        if level == "1":
+            print("starting Easy level")
+            easy_level()
+        elif level == "2":
+            print("Starting Medium level")
+            medium_level()
+        elif level == "3":
+            main()
+        else:
+            print("Wrong input. Please try again")
+            game_start()
 
 
 # Checking what user has typed if it typed 1, 2 or 3
@@ -590,21 +593,7 @@ def game_rules():
     Multiplication
     Division\n"""
     )
-    game_rules_input = input(
-        """Please select what you want to do know.
-    1) Go back.
-    2) Game Start
-    3) Exit Game \n"""
-    )
-    if game_rules_input == "1":
-        main()
-    elif game_rules_input == "2":
-        game_start()
-    elif game_rules_input == "3":
-        exit()
-    else:
-        print("Wrong input. Please try again.")
-        game_rules()
+    
 
 
 # Game rules
@@ -612,26 +601,29 @@ def game_rules():
 
 
 def main():
-    print("1) Start the game")
-    print("2) Game rules")
-    print("3) Exit Game")
-    game_beginning = input(
-        "Please select if you want to start "
-        "the game or read the rules of the game. "
-    )
+    """
+    Game rules
+    Explains the rules of the game and what user can do.
+    """
+    while True:
+        print(WELCOME_MSG)
+        game_beginning = input(
+            "Please select if you want to start "
+            "the game or read the rules of the game. "
+        )
 
-    if game_beginning == "1":
-        game_start()
-    elif game_beginning == "2":
-        game_rules()
-    elif game_beginning == "3":
-        exit()
-    else:
-        print("Wrong input. Please try again.")
-        main()
+        if game_beginning == "1":
+            game_start()
+        elif game_beginning == "2":
+            game_rules()
+        elif game_beginning == "3":
+            exit()
+        else:
+            print("Wrong input. Please try again.")
 
 
 # Asking user what they want to do read the rules or start the game
 # If wrong input entered it will say wrong input and will ask again
 
-main()
+if __name__ == "__main__":
+    main()
