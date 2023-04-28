@@ -191,11 +191,11 @@ def easy_level_division():
 
         if num1 % num2 == 0:
             easy_division = num1 / num2
-            user_msg = f"{num1} / {num2}"
+            user_msg = f"{num1} / {num2}\n"
             
         elif num2 % num1 == 0:
             easy_division = num2 / num1
-            user_msg = f"{num2} / {num1}"
+            user_msg = f"{num2} / {num1}\n"
             
         if not easy_division:
             continue
@@ -409,46 +409,47 @@ def medium_level_division():
     count = 0
     score = 0
     while count <= 9:
-        count += 1
+        
         num1 = randint(11, 100)
         num2 = randint(11, 100)
 
+        medium_division = None
+        user_msg = None
+
         if num1 % num2 == 0:
             medium_division = num1 / num2
-            try:
-                answer = input(f"{num1} / {num2} \n")
-                ans = int(answer)
-            except ValueError:
-                print("Please enter a number!")
-                continue
-            if ans == medium_division:
-                print("Correct!")
-                score += 1
-            else:
-                print("Inccorect!\n" f"Answer was {medium_division}")
-        if num2 % num1 == 0:
+            user_msg = f"{num1} / {num2}\n"
+
+        elif num2 % num1 == 0:
             medium_division = num2 / num1
-            try:
-                answer = input(f"{num2} / {num1} \n")
-                ans = int(answer)
-            except ValueError:
-                print("Please enter a number!")
-                continue
-            if ans == medium_division:
-                print("Correct!")
-                score += 1
-            else:
-                print("Inccorect!\n" f"Answer was {medium_division}")
+            user_msg = f"{num2} / {num1}\n"
+
+        if not medium_division:
+            continue
+
+        count += 1
+
+        try:
+            answer = input(user_msg)
+            ans = int(answer)
+
+        except ValueError:
+            print("Please enter a number!\n" f"Answer was {medium_division}")
+            continue
+
+        if ans == medium_division:
+            print("Correct!")
+            score += 1
+        else:
+            print("Inccorect!\n" f"Answer was {medium_division}")
     else:
         print("You got " + str(score) + f" correct out of {count}!")
-        option = input(
-            """What you want to do now?
+        option = input("""What you want to do now?
         1)Restart
         2)Go back to medium level
         3)Select difrent level
         4)Back to main menu
-        5)Else press any key to Exit \n"""
-        )
+        5)Else press any key to Exit \n""")
         if option == "1":
             medium_level_division()
         if option == "2":
