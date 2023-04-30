@@ -585,7 +585,9 @@ def game_rules():
     Addition
     Subtraction
     Multiplication
-    Division\n"""
+    Division\n
+    By entering the empty input the it will be considered as a wrong 
+    answer so be carefull."""
     )
 
 
