@@ -61,11 +61,6 @@ answer would be negative. So I created if statement to check the numbers and put
 - When playing the game and user enters not a number the game crash. Fixed by adding try and exept to catch str and put as error message.
 
 
-## Remaining Bugs
-
-- In the division game shows only few questions and at the end it show that is asked 10 questions.
-
-
 # Future Plans
 
 - Fix the bugs that left with a division and by not entering an number when playing.
@@ -116,6 +111,26 @@ This application has been deployed from GitHub to Heroku by following the steps:
 10. If prefered, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository or 
 you can do it manualy by pressing "Deploy Branch"
 11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a 'View' button to take you to your deployed link.
+
+
+## Fork Repository
+To fork the repository by following these steps:
+
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+
+
+## Clone Repository
+
+You can clone the repository by following these steps:
+
+1. Go to the GitHub repository
+2. Locate the Code button above the list of files and click it
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard
+7. Press Enter to create your local clone.
 
 
 # Credits

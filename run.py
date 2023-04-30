@@ -13,7 +13,7 @@ What you want to do now?
     2)Go back to easy level
     3)Select difrent level
     4)Back to main menu
-    5)Else press any key to Exit
+    5)Enter any key to Exit
 """
 
 
@@ -262,7 +262,7 @@ def medium_level_addition():
         2)Go back to medium level
         3)Select difrent level
         4)Back to main menu
-        5)Else press any key to Exit \n"""
+        5)Enter any key to Exit \n"""
         )
         if option == "1":
             medium_level_addition()
@@ -327,7 +327,7 @@ def medium_level_subtract():
         2)Go back to medium level
         3)Select difrent level
         4)Back to main menu
-        5)Else press any key to Exit \n"""
+        5)Enter any key to Exit \n"""
         )
         if option == "1":
             medium_level_subtract()
@@ -378,7 +378,7 @@ def medium_level_multiplication():
         2)Go back to medium level
         3)Select difrent level
         4)Back to main menu
-        5)Else press any key to Exit \n"""
+        5)Enter any key to Exit \n"""
         )
         if option == "1":
             medium_level_multiplication()
@@ -441,7 +441,7 @@ def medium_level_division():
         2)Go back to medium level
         3)Select difrent level
         4)Back to main menu
-        5)Else press any key to Exit \n"""
+        5)Enter any key to Exit \n"""
         )
         if option == "1":
             medium_level_division()
